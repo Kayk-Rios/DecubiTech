@@ -1,0 +1,140 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #3FA551;
+  
+}
+
+
+/* header */
+
+.Contai{
+  width: 1535px;
+  max-width: 1600px;
+  padding-bottom: 40px;
+  
+}
+.ContainerHedNav ul  {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+ 
+}
+.ContainerHedNav ul{
+  padding: 40px;
+  background-color: #046419;
+ border-radius: 10px;
+}
+.ContainerHedNav ul li a{
+   color: black;
+   font-weight: 500;
+   text-decoration: none;
+   font-size: 20px;
+}
+.ContainerHedNav ul li a:hover{
+  color: rgb(54, 49, 49);
+  font-size: 20.5px;
+}
+
+
+/* PreHome */
+
+.Relogio{
+  width: 400px;
+  height: 400px;
+}
+.Divisao1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+.Decubitos{
+padding: 20px;
+}
+.Decubitos ul li{
+  list-style: none;
+  padding: 13px;
+  padding-left: 70px;
+  display: flex;
+  font-weight: 500;
+  width: 400px;
+}
+.heade{
+  display: flex;
+}
+
+/* Paciente */
+.Voltar1{
+  margin-right: 90%;
+}
+
+
+
+
+/* Relatorio */
+
+.SobreHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 94%;
+}  
+.SobreHeader a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  margin: 6px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: #046419;
+  font-weight: 550;
+  padding: 10px 26px; 
+  justify-content: center;
+}
+
+
+
+/* sobre */
+
+.Relatorio{
+  display: flex;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.paragrafos{
+  padding: 20px;
+  padding-top: 100px;
+}
+.paragrafos p{
+  padding: 20px;
+  font-size: 24px;
+  color: #4E1A3C ;
+  justify-content: center;
+}
+.paragrafos .Pultimo{
+  padding-bottom: 300px;
+}
+.image1, .image2{
+  width: 40px;
+  margin: 0px 60px;
+  height: 40px;
+}

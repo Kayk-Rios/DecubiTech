@@ -1,0 +1,107 @@
+
+
+.container {
+  width: 1535px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #76AB37;
+  }
+    .container span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  
+  .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container form  .inputContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .container form  .inputContainer input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px;
+    width: 520px;
+    height: 49px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    height: 30px;    
+    border-radius: 30px;
+    background:#046419;
+    text-align: center;
+    color: white;
+  
+  }
+  
+  
+  .container form a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 16px;
+    text-decoration: none;
+    padding-bottom: 16px;
+    color: #ffffff;
+  }
+  
+  .container form .button {
+    width: 520px;
+    height: 38px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    border-radius: 30px;
+    background:#046419;
+    color: white;
+  }
+  .container form .button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }  
+  .container form .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+  }
+  
+  .container form .footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  .container form .footer a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #d3d4d5;
+  }
+   img{
+    width: 800px;
+    height: 700px;
+}
+
+/* relogio */
+
+
+
