@@ -1,6 +1,6 @@
 
 import Header from "../Header/Header"
-import FomCadastro from "../FormCadastro/FomCadastro"
+import FormCadastro from "../FormCadastro/FormCadastro"
 
 export function Cadastro() {
 
@@ -8,8 +8,7 @@ export function Cadastro() {
     <div >
      
       <Header/>
-       <h1>Cadastro</h1>
-       <FomCadastro/>
+       <FormCadastro/>
     </div>
 
   );

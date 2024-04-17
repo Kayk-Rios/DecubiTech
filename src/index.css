@@ -3,8 +3,8 @@
   font-synthesis: none;
 }
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 
 }
@@ -88,6 +88,57 @@ padding: 20px;
 }
 
 
+.ImgPaciente{
+  width: 50px;
+  height: 50px;
+}
+
+.Usuarios{
+  margin-left: 18%;
+  height: 135px;
+  width: 320px;
+  padding: 20px;
+ 
+}
+.Pacientes{
+  display: flex;
+border-radius: 10px;
+ margin-bottom: 40px;
+background: #86B499 ;}
+.Pacientes h4{
+  padding: 15px;
+  color: #4E1A3C;
+}
+.butaoExcuir{
+  background-color:#aacbb8;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+
+}
+.butaoExcuir:hover{
+  background-color:#84948b;
+}
+summary{ 
+  padding: 15px ;
+  
+}
+details{ 
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+}
+details> summary{
+  list-style: '>';
+}
+details[open]> summary{
+  list-style: '  <';
+}
+.cpf, .Descricao ,.Descbutton{
+  color: #4E1A3C;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
 
 
 /* Relatorio */
@@ -137,4 +188,185 @@ padding: 20px;
   width: 40px;
   margin: 0px 60px;
   height: 40px;
+}
+.error-message{
+  color: red;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 20px;
+  background: rgb(4, 123, 28);
+  margin-bottom: 20px;
+}
+
+
+/* formularioPaciente FormulaRelatorio */
+
+.CadastroPaciente{
+  display: flex;
+  flex-direction: column;
+  width:500px;
+  margin: 0 auto;
+ 
+}
+.CadastroPaciente2{
+   margin-top: -110px;
+}
+.formPaciente input ,.ButaoCadastroPaciente{
+  margin: 7px 5px;
+  padding: 7px 35px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.PriMeiroinput{
+  background-color: #D64C86 ;
+}
+::placeholder{
+  color: white;
+}
+.SegundoNome::placeholder{
+  color:#4E1A3C ;
+}
+.SegundoNome ,.ButaoCadastroPaciente {
+  background-color:#86B499 ;
+}
+.ButaoCadastroPaciente:hover{
+  background-color:#618570 ;
+  color: white;
+}
+.textareaCastro{
+  border: none;
+  width: 320px;
+  height: 110px;
+  border-radius: 10px;
+}
+
+/* Usuarios */
+ 
+.pesquisaPaciente{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.lupa {
+  background-color: #D64C86;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 50px;
+
+}
+.ButoaLupa{
+  background-color: #D64C86;
+  padding:0.5px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.lupa1{
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #D64C86;
+  width: 40px;
+  height: 40px;
+}
+
+/* Tela de loading app.jsx */
+.Loading{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+
+}
+
+.Loading h2{
+  margin-top: 310px;
+    margin-left: 100px;
+}
+
+/* gerador de relatorio */
+.liultima{
+  margin-top: -1px;
+}
+.VerLlista {
+  color: #4E1A3C;
+  text-decoration: none;
+}
+.VerLlista:hover{
+  color: #4E1A3C;
+  font-size: 17px;
+}
+.imprimir{
+  background-color:#618570 ;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #4E1A3C;
+ 
+}
+.relatoriooImprimir{
+  width: 1200px;
+   text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  }
+.voltarIM{
+width: 40px;
+height: 40px;
+  margin-right: 1100px;
+}
+.pPaciente{
+  padding: 20px;
+  color: #4E1A3C;
+  font-size: 25px;
+}
+
+table{
+  padding-left: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+hr{
+  width:1200px;
+}
+.hr{
+  width:1200px;
+  margin-bottom: 200px;
+}
+.IMpresaofot{
+  margin-top: 40px;
+  border-radius: 150px;
+  margin-right: 50px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+table {
+  
+  border-collapse: collapse;
+  margin-right: 20px; 
+
+  width: 100%;
+  border-collapse: collapse;
+
+}
+th, td {
+  width: 300px;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black; /* Adiciona borda preta de 1px */
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
 }

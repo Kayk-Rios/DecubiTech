@@ -101,7 +101,41 @@
     height: 700px;
 }
 
-/* relogio */
+#email, #password {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #046419;
+  color: #fff;
+  text-align: center;
+  width: 300px;
 
+}
+.btn{
+  margin-top: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #046419;
+  padding: 10px 0px;
+  width: 300px;
+}
 
-
+.Enfermeira{
+  margin-right: -199px;
+}
+.mostrar_senha{
+  background-color: transparent;
+  margin-left: -260px;
+  margin-bottom: 15px;
+  border: none;
+}
+.olho{
+  width: 20px;
+  height: 20px;
+}
+h2{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

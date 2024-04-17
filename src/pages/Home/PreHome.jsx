@@ -1,6 +1,6 @@
 import Logo from "./img/Easytime.png";
  import Header from "../Header/Header";
-// import "./homecss/home.css";
+ import "./homecss/home.css";
 
 export function PreHome() {
   return (
@@ -25,6 +25,8 @@ export function PreHome() {
             <li> Decúbito Lateral Direito</li>
             <li>Decúbito Fowler</li>
           </ul>
+
+
         </div>
       </div>
     </div>
