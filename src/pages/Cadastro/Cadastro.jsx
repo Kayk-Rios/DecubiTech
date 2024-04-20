@@ -1,18 +1,13 @@
-
-import Header from "../Header/Header"
-import FormCadastro from "../FormCadastro/FormCadastro"
+import Header from "../Header/Header";
+import FormCadastro from "../FormCadastro/FormCadastro";
 
 export function Cadastro() {
-
   return (
-    <div >
-     
-      <Header/>
-       <FormCadastro/>
+    <div>
+      <Header />
+      <FormCadastro />
     </div>
-
   );
 }
 
-
-export default Cadastro
+export default Cadastro;

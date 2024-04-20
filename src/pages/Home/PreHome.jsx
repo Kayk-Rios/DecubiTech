@@ -1,12 +1,10 @@
-import Logo from "./img/Easytime.png";
- import Header from "../Header/Header";
- import "./homecss/home.css";
+import Logo from "../../assets/img/Easytime2.png";
+import Header from "../Header/Header";
 
 export function PreHome() {
   return (
-  
-    <div > 
-     <Header/>
+    <div>
+      <Header />
       <div className="Divisao1">
         <div className="DivRelogio">
           <img
@@ -25,8 +23,6 @@ export function PreHome() {
             <li> Decúbito Lateral Direito</li>
             <li>Decúbito Fowler</li>
           </ul>
-
-
         </div>
       </div>
     </div>
