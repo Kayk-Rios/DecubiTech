@@ -1,20 +1,18 @@
-import { getDatabase, ref, set } from "firebase/database";
 import { useState } from "react";
-import "../firebase";
-
+import { getDatabase, ref, set } from "firebase/database";
 import InputMask from "react-input-mask";
 
 export function FormCadastro() {
   const [username, setUsername] = useState("");
   const [cpf, setCpf] = useState("");
-
   const [Descricao, setDescricao] = useState("");
   const [profissional, setprofissional] = useState("");
+  const [status, setStatus] = useState("");
 
   function writeUserData() {
     const db = getDatabase();
-
     let userId = Math.floor(Math.random() * 99999);
+
     set(ref(db, "users/" + userId), {
       userId,
       username,
@@ -24,9 +22,29 @@ export function FormCadastro() {
     });
   }
 
+  function tempoPaciente(event) {
+    event.preventDefault(); // Impede o recarregamento da página
+    var tempo;
+
+    if (status === "MG") {
+      tempo = 5000; // 5 segundos
+    } else if (status === "G") {
+      tempo = 10000; // 10 segundos
+    } else if (status === "E") {
+      tempo = 15000; // 15 segundos
+    } else {
+      console.error("Status inválido");
+      return;
+    }
+
+    setTimeout(function () {
+      alert("Tempo esgotado!");
+    }, tempo);
+  }
+
   return (
     <>
-      <div className="CadastroPaciente ">
+      <div className="CadastroPaciente">
         <form className="formPaciente">
           <input
             type="text"
@@ -50,16 +68,21 @@ export function FormCadastro() {
             placeholder="Digite o CPF"
             onChange={(e) => setCpf(e.target.value)}
           ></InputMask>
-          <textarea
-            name="postContent"
-            rows={4}
-            cols={20}
-            className="SegundoNome textareaCastro"
-            defaultValue="O paciente está, "
-            onChange={(e) => setDescricao(e.target.value)}
-          />
           <br />
-          <button onClick={writeUserData} className="ButaoCadastroPaciente">
+          <select
+            name="status"
+            id="status"
+            value={status}
+            onChange={(e) => setStatus(e.target.value)}
+          >
+            <option value="">Status</option>
+            <option value="MG">Muito Grave</option>
+            <option value="G">Grave</option>
+            <option value="E">Estável</option>
+          </select>
+          <br />
+          <br />
+          <button onClick={tempoPaciente} className="ButaoCadastroPaciente">
             Cadastrar paciente
           </button>
         </form>
